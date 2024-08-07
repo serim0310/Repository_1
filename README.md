@@ -1,4 +1,4 @@
-https://drive.google.com/drive/folders/1lmgfBkGu5DeZOmC-7VkOu2rsH0H8ZL_5
+수업자료 구글 드라이브: https://drive.google.com/drive/folders/1lmgfBkGu5DeZOmC-7VkOu2rsH0H8ZL_5
 
 # 화재 위험성 평가 프로그램 (Fire Risk Assessment Program)
 
