@@ -1,49 +1,6 @@
 수업자료 구글 드라이브: https://drive.google.com/drive/folders/1lmgfBkGu5DeZOmC-7VkOu2rsH0H8ZL_5
 
 
-from sklearn.linear_model import LinearRegression
-
-
-
-data = pd.read_csv('./data/1.salary.csv',)
-
-# 데이터 준비
-X = data[['Experience Years']]
-y = data['Salary']
-
-# 데이터 분할
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-
-# 모델 학습
-model = LinearRegression()
-model.fit(X_train, y_train)
-
-# 예측
-y_pred = model.predict(X_test)
-
-# 성능 평가
-mse = mean_squared_error(y_test, y_pred)
-rmse = np.sqrt(mse)
-mae = mean_absolute_error(y_test, y_pred)
-
-print(f'MSE: {mse}')
-print(f'RMSE: {rmse}')
-print(f'MAE: {mae}')
-
-plt.figure(figsize=(10, 6))
-
-# 실제 값 산점도
-plt.scatter(X_test, y_test, color='blue', label='Actual Values')
-
-# 예측 값 선 그래프
-plt.plot(X_test, y_pred, color='red', linewidth=2, label='Predicted Values')
-
-plt.xlabel('Experience Years')
-plt.ylabel('Salary')
-plt.title('Actual vs Predicted Salary')
-plt.legend()
-plt.show()
-
 
 # 화재 위험성 평가 프로그램 (Fire Risk Assessment Program)
 
