@@ -1,5 +1,16 @@
 수업자료 구글 드라이브: https://drive.google.com/drive/folders/1lmgfBkGu5DeZOmC-7VkOu2rsH0H8ZL_5
 
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+
+header  = ['years', ' salary']
+
 # 화재 위험성 평가 프로그램 (Fire Risk Assessment Program)
 
 ### 불 가능? 불가능!
