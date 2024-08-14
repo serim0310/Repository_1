@@ -1,5 +1,10 @@
 수업자료 구글 드라이브: https://drive.google.com/drive/folders/1lmgfBkGu5DeZOmC-7VkOu2rsH0H8ZL_5
 
+
+from sklearn.linear_model import LinearRegression
+
+
+
 data = pd.read_csv('./data/1.salary.csv',)
 
 # 데이터 준비
